@@ -9,6 +9,12 @@
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     helix.url = "github:SoraTenshi/helix/experimental";
 
+    eww = {
+      url = "github:elkowar/eww";
+      inputs.nixpkgs.follows= "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
